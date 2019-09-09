@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-color: #01d28e;
+  background-color: #f7e8f6;
 }
 
 #level-title {
@@ -8,7 +8,7 @@ body {
   /* font-family: 'Press Start 2P', cursive; FOR GAME OVER TEXT*/
   font-size: 3rem;
   margin: 5%;
-  color: #FEF2BF;
+  color: #01d28e;
 }
 
 .container {
@@ -17,7 +17,8 @@ body {
   margin: auto;
 }
 
-.btn {
+.btn-box {
+  margin-bottom: 500px;
   margin: 25px;
   display: inline-block;
   height: 200px;
@@ -57,4 +58,34 @@ body {
   font-size: 3rem;
   margin: 5%;
   color: #230338;
+}
+
+.btn-starter {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+font-size: 11px;
+text-transform: uppercase;
+letter-spacing: 2.5px;
+font-weight: 500;
+color: #000;
+background-color: #fcf9ea;
+border: none;
+  border-radius: 45px;
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease 0s;
+cursor: pointer;
+outline: none;
+
+}
+
+.btn-starter:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fcf9ea;
+  transform: translateY(-7px);
+}
+
+.col {
+  padding-top: 50px;
 }

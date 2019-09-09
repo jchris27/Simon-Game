@@ -48,8 +48,33 @@ function newSequence() {
 
 }
 
+$(".btn-starter").click(function() {
+  var toggle = true;
+
+  while (toggle == true) {
+
+    if (level < 1) {
+
+      newSequence();
+      $(".btn-starter").hide();
+      $(".game-over-text").remove();
+      $("img").hide();
+
+  } else {
+
+    toggle = false;
+  }
+
+  }
+
+
+});
+
+
+
+
 // click event listener to all buttons inside their container
-$(".btn").click(function() {
+$(".btn-box").click(function() {
   // get the attribute id of an element
   var userChosenColor = $(this).attr("id");
   // push the element tag to an array
@@ -92,6 +117,7 @@ while (toggle == true) {
   if (level < 1) {
 
     newSequence();
+    $(".btn-starter").hide();
     $(".game-over-text").remove();
     $("img").hide();
 
@@ -128,6 +154,7 @@ function checkAnswer(currentLevel) {
 
     $("img").show();
     $("#level-title").text(":( Press Any Key ⌨️ To Restart. :p");
+    $(".btn-starter").show();
 
     $("body").addClass("game-over");
 
